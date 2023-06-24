@@ -20,14 +20,14 @@ def kirim_pesan(number, name, memiliki_wa, tidak_punya_wa):
         # display = Display(visible=0, size=(800, 600))
         # display.start()
         # Tentukan jalur ke ChromeDriver Anda
-        chrome_driver_path = '/home/rauf/Documents/Chrome/chromedriver'
+        chrome_driver_path = 'path_driver'
 
         # Inisialisasi Service object
         service = Service(chrome_driver_path)
 
         # Inisialisasi Options object
         options = Options()
-        options.add_argument("user-data-dir=/home/rauf/belajar/project/backend/User_Data")
+        options.add_argument("user-data-dir=")
 
         # Inisialisasi WebDriver dengan menggunakan Service object dan Options object
         driver = webdriver.Chrome(service=service, options=options)
